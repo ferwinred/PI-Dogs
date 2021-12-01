@@ -1,0 +1,49 @@
+@import './variables.scss';
+
+.searchBar {
+    background-color: $bg_home2;
+    width: 100%;
+    height: 5vh;
+    display: flex; 
+    color: $card_font;
+    .search_form {
+        margin-top: 0.2rem;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        .search_input {
+            width: 100%;
+            height: 80%;
+            margin-right: 0.1rem;
+            border: 2px solid black;
+            border-radius: 5px;
+            &::placeholder {
+                color: $card_font;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+        .btn_form {
+            width: 20%;
+            height: 80%;
+            padding: 0 0.5rem;
+            @include btn_style2;
+            border: 1px solid black;
+        }
+    }
+    .form_limpiar{
+        margin-top: 0.2rem;
+        margin-left: 0.1rem;
+        margin-right: 2rem;
+        .btn_form {
+            width: 100%;
+            text-align: center;
+            height: 89%;
+            padding: 0 0.5rem;
+            @include btn_style2;
+            border: 1px solid black;
+            
+        }
+    }
+}

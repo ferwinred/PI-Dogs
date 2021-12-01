@@ -1,0 +1,30 @@
+@import './variables.scss';
+
+.nav_paginado {
+    width: 100%;
+    .paginado {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2rem;
+        .pages {
+    
+            padding: 0.2rem;
+            
+            .btn_pages{
+                width: 2rem;
+                height: 2rem;
+                padding: 1px;
+               @include btn_style2;
+               &:focus {
+                    background-color: $btn-bg1;
+                    border: 1px solid $btn_bg;
+                    color: $bg_home;
+                    cursor: pointer;
+                }
+            }
+           
+        }
+    }
+}

@@ -1,0 +1,9 @@
+export const API_DB = 'http://localhost:3001/api/';
+export const ASC = 'Ascendente';
+export const DESC = 'Descendente';
+export const ALL = 'All';
+export const API = 'Api';
+export const DB = 'DB';
+export const PESO_ASC= 'PesoAsc';
+export const PESO_DESC= 'PesoDesc';
+export const ALL_TEMP = 'AllTemp';

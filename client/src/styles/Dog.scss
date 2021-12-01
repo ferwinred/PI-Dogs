@@ -1,0 +1,63 @@
+@import './variables.scss';
+
+
+.card {
+    position: relative;
+    background-color: $bg_home;
+    padding: 0.5rem;
+    color: $light_font;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 18rem;
+    min-width: 18rem;
+    max-height: 25rem;
+    word-wrap: break-word;
+    /* background-color: #fff;
+    background-clip: border-box; */
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    img {
+        /* position: absolute; */
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 12rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        @supports(object-fit: cover){
+            .box img{
+                width: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        } 
+    }
+    h4 {
+        max-height: 5rem;
+        text-align: center;
+        font-size: small;
+    }
+    h3 {
+        max-height: 2rem;
+        margin: 1rem;
+        font-size: large;
+        font-weight: bold;
+    }
+    .dogDetails {
+        padding: 0.3rem;
+        margin-top: 0.5rem;
+        @include btn_style;
+    }
+    &:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+    }
+}
+  

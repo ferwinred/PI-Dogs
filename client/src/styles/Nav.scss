@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+.navBar {
+
+    background-color: $bg_home;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+
+    .title {
+        margin-left: 2rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-family: 'Varela Round', sans-serif;
+        color:$light_font;
+        .App-logo {
+            height: 2.5rem;
+            pointer-events: none;
+          }
+          
+          @media (prefers-reduced-motion: no-preference) {
+            .App-logo {
+              animation: App-logo-spin infinite 20s linear;
+            }
+          }
+    }
+
+    .nav{
+        width: 15rem;
+        list-style: none;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .links{
+            text-align: center;
+            .text-link{
+                padding: 0 0.5rem;
+                text-decoration: none;
+                &:focus, &:hover, &:visited, &:link, &:active {
+                    text-decoration: none;
+                }
+                @include btn_style;
+            }
+        }
+    }
+
+}
+
+
+  
