@@ -6,8 +6,6 @@ export default function Dog ({name, id, max_weight, min_weight, temperaments,  i
     console.log(temperaments);
     
     let temps = !Array.isArray(temperaments)? temperaments : temperaments.map(e => e.name).join(" ,");
-        
-    console.log(temps)
 
     return (
         <div className='card'>

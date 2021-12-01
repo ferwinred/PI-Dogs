@@ -30,7 +30,6 @@ export default function reducer (state = initialState, action) {
                 ...state,
                 temperaments: action.payload
             }
-        
         case GET_DETAILS:
             return {
                 ...state,
@@ -49,7 +48,6 @@ export default function reducer (state = initialState, action) {
                         };
                         return 0;
                     }
-                
                     if(action.payload === PESO_ASC || action.payload === PESO_DESC){
                         if(parseInt(a.min_weight) > parseInt(b.min_weight)){
                             return action.payload === PESO_ASC ? 1 : -1;
