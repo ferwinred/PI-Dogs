@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb9d9fbc.chunk.css",
+    "main.js": "/static/js/main.09fd4c4e.chunk.js",
+    "main.js.map": "/static/js/main.09fd4c4e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bd19b990.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bd19b990.js.map",
+    "static/js/2.2e52e54c.chunk.js": "/static/js/2.2e52e54c.chunk.js",
+    "static/js/2.2e52e54c.chunk.js.map": "/static/js/2.2e52e54c.chunk.js.map",
+    "static/js/3.e04f9a92.chunk.js": "/static/js/3.e04f9a92.chunk.js",
+    "static/js/3.e04f9a92.chunk.js.map": "/static/js/3.e04f9a92.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.da0f009782957892b20c5415d9fef7c6.js": "/precache-manifest.da0f009782957892b20c5415d9fef7c6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.cb9d9fbc.chunk.css.map": "/static/css/main.cb9d9fbc.chunk.css.map",
+    "static/js/2.2e52e54c.chunk.js.LICENSE.txt": "/static/js/2.2e52e54c.chunk.js.LICENSE.txt",
+    "static/media/dog.png": "/static/media/dog.4306e14f.png",
+    "static/media/DogDetail.scss": "/static/media/pattern3.8bdc8af3.png",
+    "static/media/perrito_default.jpeg": "/static/media/perrito_default.42511b29.jpeg",
+    "static/media/pexels-anna-bondarenko-6588292.mp4": "/static/media/pexels-anna-bondarenko-6588292.5a3fc00b.mp4",
+    "static/media/pngtree-cute-corgi-crying-dog-cartoon-image_2299953.jpg": "/static/media/pngtree-cute-corgi-crying-dog-cartoon-image_2299953.4b9d7940.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd19b990.js",
+    "static/js/2.2e52e54c.chunk.js",
+    "static/css/main.cb9d9fbc.chunk.css",
+    "static/js/main.09fd4c4e.chunk.js"
+  ]
+}
