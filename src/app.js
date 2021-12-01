@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const routes = require('./routes/index.js');
 const helmet = require('helmet');
+const cors = require('cors');
 
 require('./db.js');
 
@@ -22,7 +23,9 @@ server.use((req, res, next) => {
   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
   next();
 });
-const whitelist = ['http://localhost:3000', 'http://localhost:8080', 'https://shrouded-journey-38552.herokuapp.com']
+
+const whitelist = ['http://localhost:3000', 'http://localhost:3001', 'https://shrouded-journey-38552.herokuapp.com']
+
 const corsOptions = {
   origin: function (origin, callback) {
     console.log("** Origin of request " + origin)
@@ -32,16 +35,25 @@ const corsOptions = {
     } else {
       console.log("Origin rejected")
       callback(new Error('Not allowed by CORS'))
-    }
+    };
   }
-}
+};
 
-app.use(helmet())
+server.use(helmet());
 // --> Add this
-app.use(cors(corsOptions))
+server.use(cors(corsOptions));
 
 
 server.use('/api', routes);
+
+if (process.env.NODE_ENV === 'production') {
+  // Serve any static files
+  app.use(express.static(path.join(__dirname, 'client/build')));
+// Handle React routing, return all requests to React app
+  app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  });
+};
 
 // Error catching endware.
 server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
