@@ -19,7 +19,6 @@
     "sass-loader": "^8.0.2",
     "web-vitals": "^0.2.4"
   },
-  "proxy": "http://localhost:3001",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
