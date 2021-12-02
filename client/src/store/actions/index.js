@@ -43,11 +43,15 @@ export function searchDogs(search) {
 
 export function getTemperaments() {
     return async function(dispatch) {
+        try {
         let temps = await axios.get(`${API_DB}temperaments`)
         return dispatch({ 
             type: GET_TEMPERAMENTS, 
             payload: temps.data
         })
+        } catch (error) {
+            console.log(error)
+        }
     }
 };
 
