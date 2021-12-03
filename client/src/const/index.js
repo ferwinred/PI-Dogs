@@ -1,4 +1,4 @@
-export const API_DB = 'http://localhost:3001/api/';
+export const API_DB = 'http://localhost:8080/api/';
 export const ASC = 'Ascendente';
 export const DESC = 'Descendente';
 export const ALL = 'All';
