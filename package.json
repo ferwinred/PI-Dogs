@@ -10,8 +10,8 @@
   "author": "Henry",
   "license": "ISC",
   "engines": {
-    "node": "^16.4.2",
-    "npm": "^7.18.1"
+    "node": ">=16.4.2",
+    "npm": ">=7.18.1"
   },
   "dependencies": {
     "axios": "^0.24.0",
