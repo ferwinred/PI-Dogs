@@ -65,9 +65,9 @@ export default function reducer (state = initialState, action) {
             const filters = ()=>{
                 switch(action.payload){
                     case DB:  
-                        return state.filters.filter(dog => dog.id.toString().length>3);
+                        return state.filters.filter(dog => dog.id.toString().length>3) && state.dogs.filter(dog => dog.id.toString().length>3);
                     case API:
-                        return state.filters.filter(dog => dog.id.toString().length<=3);
+                        return state.filters.filter(dog => dog.id.toString().length<=3) && state.dogs.filter(dog => dog.id.toString().length<=3);
                     case ALL_TEMP:
                         const allDogs = state.dogs
                         return allDogs

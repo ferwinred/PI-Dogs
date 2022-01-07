@@ -8,21 +8,23 @@ import CreateDog from './components/CreateDog';
 import NotFound from './components/NotFound';
 import DogDetail from './components/DogDetail';
 import {BrowserRouter as Router} from 'react-router-dom';
+// import ResponsiveAppBar from './components/NavMaterial';
+
 
 function App() {
   return (
       <div className="App">
-         <Router>
-        <Routes>
-          <Route path='/' element={<Landing />}/>
-          <Route path='/' element={<Nav />}>
-            <Route path='home' element={<Home />}/>
-            <Route path='dog/:id' element={<DogDetail />}/>
-          </Route>
-          <Route path='create' element={<CreateDog />}/>
-          <Route path='*' element={<NotFound/>}/>
-        </Routes>
-      </Router>
+        <Router>
+          <Routes>
+            <Route path='/' element={<Landing />}/>
+            <Route path='/' /*element={<Nav />}*/ element={<Nav />}>
+              <Route path='home' element={<Home />}/>
+              <Route path='dog/:id' element={<DogDetail />}/> 
+            </Route>
+            <Route path='create' element={<CreateDog />}/>
+            <Route path='*' element={<NotFound/>}/>
+          </Routes>
+        </Router>
       </div>
   );
 }
